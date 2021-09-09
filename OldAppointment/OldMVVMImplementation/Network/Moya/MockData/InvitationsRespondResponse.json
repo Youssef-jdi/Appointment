@@ -1,0 +1,26 @@
+{
+    "data":{
+        "typeId": 3,
+        "title": "Meeting with client",
+        "description":"Meeting to discuss onboarding process and starting roadmap planning.",
+        "location": {
+            "country":"Netherlands",
+            "region": "Nord-Holland",
+            "locality":"Amsterdam",
+            "thoroughfare":"Kinkerstraat 200 1V",
+            "postalCode": "2204 AV",
+            "latitude": "42.5324",
+            "longitude":"2.343"
+        },
+        "allowAvailability": true,
+        "allowDateProposals": true,
+        "participantUserIds": [
+        112,
+        213,
+        324
+        ],
+        "startDate": 1551281112,
+        "endDate": 1551270312
+    }
+    
+}

@@ -1,0 +1,39 @@
+sourceryCommand: null
+appointmentTests:
+  sources:
+    include:
+    - ./.
+  output: ./appointmentTests/Mocks/Mock.generated.swift
+  targets:
+  - appointmentTests
+  testable:
+  - appointment
+  import:
+  - CoreGraphics
+  - Crayon
+  - Foundation
+  - Moya
+  - PathKit
+  - Result
+  - ShellOut
+  - Swinject
+  - SwinjectAutoregistration
+  - SwinjectStoryboard
+  - UIKit
+  - Yams
+  - p2_OAuth2
+  - RxSwift
+mocky:
+  sources:
+    include:
+    - ./appointment
+    - ./appointmentTests
+  output: ./appointmentTests/Mocks/Mock.generated.swift
+  targets:
+  - appointmentTests
+  testable:
+  - appointment
+  import:
+  - Moya
+  - Result
+  - p2_OAuth2

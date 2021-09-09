@@ -1,0 +1,186 @@
+{
+    "products": [
+        {   "id": 1,
+            "name": "Alizarin",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#e74c3c",
+                    "highlightColor": "#6080c8"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": "River",
+            "owned": false,
+            "price": {
+                "amount": 1,
+                "localizedPrice": "€ 1"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#3498db",
+                    "highlightColor": "#1abc9c"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "name": "Midnight",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#34495e",
+                    "highlightColor": "#8e44ad"
+                }
+            }
+        },
+        {   "id": 4,
+            "name": "Green Sea",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#1abc9c",
+                    "highlightColor": "#2e77db"
+                }
+            }
+        },
+        {   "id": 5,
+            "name": "Summer",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#f39c12",
+                    "highlightColor": "#e74c3c"
+                }
+            }
+        },
+        {   "id": 6,
+            "name": "Purple",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#a55eea",
+                    "highlightColor": "#ea2dcd"
+                }
+            }
+        },
+        {   "id": 7,
+            "name": "Greeny",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#95b936",
+                    "highlightColor": "#1289a7"
+                }
+            }
+        },
+        {   "id": 8,
+            "name": "Flamingo",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#ee85aa",
+                    "highlightColor": "#6a5da7"
+                }
+            }
+        },
+        {   "id": 9,
+            "name": "Dark",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#33363e",
+                    "highlightColor": "#c44569"
+                }
+            }
+        },
+        {   "id": 10,
+            "name": "Old But Gold",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#baa702",
+                    "highlightColor": "#4b4b4b"
+                }
+            }
+        },
+        {   "id": 11,
+            "name": "Royal",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#4b7bec",
+                    "highlightColor": "#6c39b2"
+                }
+            }
+        },
+        {   "id": 12,
+            "name": "Bear",
+            "owned": false,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "#4d4032",
+                    "highlightColor": "#904444"
+                }
+            }
+        }
+    ]
+}

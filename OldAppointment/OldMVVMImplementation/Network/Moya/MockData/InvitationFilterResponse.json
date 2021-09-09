@@ -1,0 +1,141 @@
+{
+    "data": [
+    {
+        "name": "Party",
+        "isNew": true,
+        "lastActivityAt": 234234234243,
+        "plannedDate": 213213214214,
+        "participants": {
+            "totalCount": 5,
+            "respondedCount": 3
+        },
+        "status": "PLANNED"
+    },
+    {
+        "name": "High Wine",
+        "isNew": false,
+        "lastActivityAt": 234234234243,
+        "plannedDate": null,
+        "participants": {
+            "totalCount": 3,
+            "respondedCount": 2
+        },
+        "status": "CANCELLED"
+    },
+    {
+        "name": "Party",
+        "isNew": true,
+        "lastActivityAt": 234234234243,
+        "plannedDate": 213213214214,
+        "participants": {
+            "totalCount": 5,
+            "respondedCount": 3
+        },
+        "status": "PLANNED"
+    },
+    {
+        "name": "High Wine",
+        "isNew": false,
+        "lastActivityAt": 234234234243,
+        "plannedDate": null,
+        "participants": {
+            "totalCount": 3,
+            "respondedCount": 2
+        },
+        "status": "CANCELLED"
+    },
+    {
+        "name": "Party",
+        "isNew": true,
+        "lastActivityAt": 234234234243,
+        "plannedDate": 213213214214,
+        "participants": {
+            "totalCount": 5,
+            "respondedCount": 3
+        },
+        "status": "PLANNED"
+    },
+    {
+        "name": "High Wine",
+        "isNew": false,
+        "lastActivityAt": 234234234243,
+        "plannedDate": null,
+        "participants": {
+            "totalCount": 3,
+            "respondedCount": 2
+        },
+        "status": "CANCELLED"
+    },
+    {
+        "name": "Party",
+        "isNew": true,
+        "lastActivityAt": 234234234243,
+        "plannedDate": 213213214214,
+        "participants": {
+            "totalCount": 5,
+            "respondedCount": 3
+        },
+        "status": "PLANNED"
+    },
+    {
+        "name": "High Wine",
+        "isNew": false,
+        "lastActivityAt": 234234234243,
+        "plannedDate": null,
+        "participants": {
+            "totalCount": 3,
+            "respondedCount": 2
+        },
+        "status": "CANCELLED"
+    },
+    {
+        "name": "Party",
+        "isNew": true,
+        "lastActivityAt": 234234234243,
+        "plannedDate": 213213214214,
+        "participants": {
+            "totalCount": 5,
+            "respondedCount": 3
+        },
+        "status": "PLANNED"
+    },
+    {
+        "name": "High Wine",
+        "isNew": false,
+        "lastActivityAt": 234234234243,
+        "plannedDate": null,
+        "participants": {
+            "totalCount": 3,
+            "respondedCount": 2
+        },
+        "status": "CANCELLED"
+    },
+    {
+        "name": "Party",
+        "isNew": true,
+        "lastActivityAt": 234234234243,
+        "plannedDate": 213213214214,
+        "participants": {
+            "totalCount": 5,
+            "respondedCount": 3
+        },
+        "status": "PLANNED"
+    },
+    {
+        "name": "High Wine",
+        "isNew": false,
+        "lastActivityAt": 234234234243,
+        "plannedDate": null,
+        "participants": {
+            "totalCount": 3,
+            "respondedCount": 2
+        },
+        "status": "CANCELLED"
+    }
+    ],
+    "pagination": {
+        "_links": {
+            "next": "https://appointment.dev2.d-tt.nl/api/v1/invitations?offset=20&limit=10"
+        }
+    }
+}

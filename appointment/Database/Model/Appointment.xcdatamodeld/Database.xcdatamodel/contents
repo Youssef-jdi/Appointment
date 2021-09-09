@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppointmentDateEntity" representedClassName="AppointmentDateEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appointmentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="appointmentTitle" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isFinal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentEntity" inverseName="dates" inverseEntity="AppointmentEntity"/>
+        <relationship name="dateUsers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ApppointmentDateUsersEntity" inverseName="appointmentDate" inverseEntity="ApppointmentDateUsersEntity"/>
+        <relationship name="responseCount" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ResponseCountEntity" inverseName="date" inverseEntity="ResponseCountEntity"/>
+    </entity>
+    <entity name="AppointmentEntity" representedClassName="AppointmentEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="appointmentDescription" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="availabilityAllowed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="created" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="creatorId" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="creatorName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="isClosed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="notifyAt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="origin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proposalAllowed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AttachmentEntity" inverseName="appointment" inverseEntity="AttachmentEntity"/>
+        <relationship name="chatIds" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ChatIdEntity" inverseName="appointment" inverseEntity="ChatIdEntity"/>
+        <relationship name="dates" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AppointmentDateEntity" inverseName="appointment" inverseEntity="AppointmentDateEntity"/>
+        <relationship name="participants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ParticipantEntity" inverseName="appointment" inverseEntity="ParticipantEntity"/>
+        <relationship name="proposedDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProposedDateEntity" inverseName="appointment" inverseEntity="ProposedDateEntity"/>
+        <relationship name="toDoListItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ToDoListEntity" inverseName="appointment" inverseEntity="ToDoListEntity"/>
+    </entity>
+    <entity name="ApppointmentDateUsersEntity" representedClassName="ApppointmentDateUsersEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appointmentDateID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="availability" optional="YES" attributeType="String"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="repliedOn" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="appointmentDate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentDateEntity" inverseName="dateUsers" inverseEntity="AppointmentDateEntity"/>
+    </entity>
+    <entity name="AttachmentEntity" representedClassName="AttachmentEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="path" optional="YES" attributeType="String"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentEntity" inverseName="attachments" inverseEntity="AppointmentEntity"/>
+    </entity>
+    <entity name="BusinessProfileEntity" representedClassName="BusinessProfileEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="function" optional="YES" attributeType="String"/>
+        <attribute name="kvk" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="zipCodeCity" optional="YES" attributeType="String"/>
+        <relationship name="currentUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CurrentUserEntity" inverseName="businessProfile" inverseEntity="CurrentUserEntity"/>
+    </entity>
+    <entity name="ChatIdEntity" representedClassName="ChatIdEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="chatId" optional="YES" attributeType="String"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentEntity" inverseName="chatIds" inverseEntity="AppointmentEntity"/>
+    </entity>
+    <entity name="CurrentUserEntity" representedClassName="CurrentUserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="String"/>
+        <attribute name="credits" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="isBanned" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isRegistered" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="registeredAt" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="businessProfile" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BusinessProfileEntity" inverseName="currentUser" inverseEntity="BusinessProfileEntity"/>
+        <relationship name="proposedDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProposedDateEntity" inverseName="user" inverseEntity="ProposedDateEntity"/>
+    </entity>
+    <entity name="EventEntity" representedClassName="EventEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appointmentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateTime" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isRead" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="relation" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ParticipantEntity" representedClassName="ParticipantEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appointmentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="isViewed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="typeResponse" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentEntity" inverseName="participants" inverseEntity="AppointmentEntity"/>
+    </entity>
+    <entity name="ProposedDateEntity" representedClassName="ProposedDateEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appointmentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="creatorId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="end" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isApproved" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="start" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentEntity" inverseName="proposedDates" inverseEntity="AppointmentEntity"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CurrentUserEntity" inverseName="proposedDates" inverseEntity="CurrentUserEntity"/>
+    </entity>
+    <entity name="ResponseCountEntity" representedClassName="ResponseCountEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="available" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="unavailable" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="unknown" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="unsure" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentDateEntity" inverseName="responseCount" inverseEntity="AppointmentDateEntity"/>
+    </entity>
+    <entity name="SettingsEntity" representedClassName="SettingsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="dateFormat" optional="YES" attributeType="String"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="network" optional="YES" attributeType="String"/>
+        <attribute name="pushAgenda" optional="YES" attributeType="String"/>
+        <attribute name="pushAppointments" optional="YES" attributeType="String"/>
+        <attribute name="pushBusiness" optional="YES" attributeType="String"/>
+        <attribute name="pushFeedback" optional="YES" attributeType="String"/>
+        <attribute name="pushGroups" optional="YES" attributeType="String"/>
+        <attribute name="pushInvites" optional="YES" attributeType="String"/>
+        <attribute name="pushReminders" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="timeFormat" optional="YES" attributeType="String"/>
+        <attribute name="timelineDisplay" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ToDoListEntity" representedClassName="ToDoListEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appointmentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String"/>
+        <relationship name="appointment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppointmentEntity" inverseName="toDoListItems" inverseEntity="AppointmentEntity"/>
+    </entity>
+    <elements>
+        <element name="AppointmentDateEntity" positionX="0" positionY="0" width="128" height="208"/>
+        <element name="AppointmentEntity" positionX="0" positionY="0" width="128" height="403"/>
+        <element name="ApppointmentDateUsersEntity" positionX="0" positionY="0" width="128" height="193"/>
+        <element name="AttachmentEntity" positionX="0" positionY="0" width="128" height="88"/>
+        <element name="BusinessProfileEntity" positionX="0" positionY="0" width="128" height="133"/>
+        <element name="ChatIdEntity" positionX="0" positionY="0" width="128" height="73"/>
+        <element name="CurrentUserEntity" positionX="0" positionY="0" width="128" height="253"/>
+        <element name="EventEntity" positionX="0" positionY="0" width="128" height="133"/>
+        <element name="ParticipantEntity" positionX="0" positionY="0" width="128" height="178"/>
+        <element name="ResponseCountEntity" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="SettingsEntity" positionX="0" positionY="0" width="128" height="253"/>
+        <element name="ToDoListEntity" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="ProposedDateEntity" positionX="9" positionY="162" width="128" height="163"/>
+    </elements>
+</model>

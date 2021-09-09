@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="V27-7y-8nd">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" id="azH-ep-CVC" customClass="TutorialViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y5E-ma-xFt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E8-rv-1Ss">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0fh-ih-WCf"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FP1-1J-Wv4"/>
+                            </scrollView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DcQ-8p-l6Z" customClass="CustomPageControl" customModule="appointment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="712" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="loT-Zi-rTG"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="appDarkRed"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7of-1G-Ean"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7of-1G-Ean" firstAttribute="trailing" secondItem="DcQ-8p-l6Z" secondAttribute="trailing" id="0at-Cf-foc"/>
+                            <constraint firstItem="6E8-rv-1Ss" firstAttribute="height" secondItem="7of-1G-Ean" secondAttribute="height" id="1cM-dl-cZc"/>
+                            <constraint firstItem="6E8-rv-1Ss" firstAttribute="centerX" secondItem="7of-1G-Ean" secondAttribute="centerX" id="8rX-lV-9qN"/>
+                            <constraint firstItem="DcQ-8p-l6Z" firstAttribute="leading" secondItem="7of-1G-Ean" secondAttribute="leading" id="Hhe-wI-ZyY"/>
+                            <constraint firstItem="7of-1G-Ean" firstAttribute="bottom" secondItem="DcQ-8p-l6Z" secondAttribute="bottom" constant="100" id="cb9-oc-hgp"/>
+                            <constraint firstItem="6E8-rv-1Ss" firstAttribute="centerY" secondItem="7of-1G-Ean" secondAttribute="centerY" id="pfT-zd-oYb"/>
+                            <constraint firstItem="6E8-rv-1Ss" firstAttribute="width" secondItem="7of-1G-Ean" secondAttribute="width" id="smE-Jm-zWL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mcl-7y-7Wm"/>
+                    <connections>
+                        <outlet property="pageControl" destination="DcQ-8p-l6Z" id="mEy-Cd-AJz"/>
+                        <outlet property="pageControlBottomAnchor" destination="cb9-oc-hgp" id="8nC-9q-ydd"/>
+                        <outlet property="scrollView" destination="6E8-rv-1Ss" id="QCa-5I-W94"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeW-Hw-FaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="-82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="appDarkRed">
+            <color red="0.94901960784313721" green="0.31372549019607843" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

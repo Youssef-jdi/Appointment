@@ -1,0 +1,25 @@
+{
+    "data": {
+        "id": 1,
+        "givenName": "Daan",
+        "familyName": "Maan",
+        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+        "emailAddress": "daan@maan.nl",
+        "credits": 100,
+        "isBanned": false,
+        "firebaseId": "-LH23sadlksd234lsmfsdlfasdff",
+        "registeredAt": 1551272511,
+        "updatedAt": 1551272511,
+        "business": {
+            "function": "Function",
+            "registrationCode": "23432143243",
+            "location": {
+                "country": "Netherlands",
+                "region": "Nord-Holland",
+                "locality": "Amsterdam",
+                "thoroughfare": "Kinkerstraat 200 1V",
+                "postalCode": "2204 AV"
+            }
+        }
+    }
+}

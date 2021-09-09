@@ -1,0 +1,49 @@
+{
+    "products": [
+        {   "id": 1,
+            "name": "The Super Dtt Theme",
+            "owned": true,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "Some Hex Color",
+                    "highlightColor": "Some Highlight Color"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": "The Super Dtt Theme",
+            "owned": false,
+            "price": {
+                "amount": 1,
+                "localizedPrice": "€ 1"
+            },
+            "type": {
+                "background": {
+                    "imageURL": "www.d-tt.nl",
+                }
+            }
+        },
+        {
+            "id": 3,
+            "name": "The Super Dtt Theme",
+            "owned": true,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "theme": {
+                    "imageURL": "www.d-tt.nl",
+                    "firstColor": "Some Hex Color",
+                    "highlightColor": "Some Highlight Color"
+                }
+            }
+        }
+    ]
+}

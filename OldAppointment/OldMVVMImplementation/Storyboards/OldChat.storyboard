@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ri4-lj-Y3Z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Parent View Controller-->
+        <scene sceneID="cJu-ue-HG4">
+            <objects>
+                <viewController storyboardIdentifier="ChatParentViewController" id="Ri4-lj-Y3Z" customClass="ChatParentViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tor-GK-OG8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-rp-2bX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3or-dd-XkR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memoTo_header_white_icon" translatesAutoresizingMaskIntoConstraints="NO" id="BAx-o9-xIk">
+                                                <rect key="frame" x="16" y="8" width="37" height="28"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE7-vO-zML">
+                                                <rect key="frame" x="69" y="12" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzx-z9-dAX">
+                                                <rect key="frame" x="16" y="44" width="343" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BAx-o9-xIk" firstAttribute="top" secondItem="3or-dd-XkR" secondAttribute="top" constant="8" id="1Ml-RQ-I3l"/>
+                                            <constraint firstItem="jzx-z9-dAX" firstAttribute="leading" secondItem="BAx-o9-xIk" secondAttribute="leading" id="4u0-ew-wnV"/>
+                                            <constraint firstItem="jzx-z9-dAX" firstAttribute="top" secondItem="BAx-o9-xIk" secondAttribute="bottom" constant="8" id="LJq-VQ-JCg"/>
+                                            <constraint firstAttribute="bottom" secondItem="jzx-z9-dAX" secondAttribute="bottom" constant="8" id="SkE-bk-n82"/>
+                                            <constraint firstItem="BAx-o9-xIk" firstAttribute="leading" secondItem="3or-dd-XkR" secondAttribute="leading" constant="16" id="VNd-zp-QEV"/>
+                                            <constraint firstItem="sE7-vO-zML" firstAttribute="leading" secondItem="BAx-o9-xIk" secondAttribute="trailing" constant="16" id="dUB-OY-Myu"/>
+                                            <constraint firstItem="sE7-vO-zML" firstAttribute="centerY" secondItem="BAx-o9-xIk" secondAttribute="centerY" id="v6S-Xj-eNa"/>
+                                            <constraint firstAttribute="trailing" secondItem="jzx-z9-dAX" secondAttribute="trailing" constant="16" id="wmx-x0-ZY9"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqu-hX-YcQ">
+                                        <rect key="frame" x="0.0" y="72.5" width="375" height="594.5"/>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MHa-rp-2bX" firstAttribute="bottom" secondItem="r23-P8-Bm4" secondAttribute="bottom" id="ED6-Vu-Ra4"/>
+                            <constraint firstItem="MHa-rp-2bX" firstAttribute="top" secondItem="tor-GK-OG8" secondAttribute="top" id="ei8-hl-soN"/>
+                            <constraint firstItem="MHa-rp-2bX" firstAttribute="leading" secondItem="r23-P8-Bm4" secondAttribute="leading" id="puh-r9-hEV"/>
+                            <constraint firstItem="MHa-rp-2bX" firstAttribute="trailing" secondItem="r23-P8-Bm4" secondAttribute="trailing" id="wz6-uB-rJw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r23-P8-Bm4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FCu-Wr-IwW"/>
+                    <connections>
+                        <outlet property="chatContainerView" destination="fqu-hX-YcQ" id="Fhp-a7-7hj"/>
+                        <outlet property="headerImageView" destination="BAx-o9-xIk" id="9iv-8G-692"/>
+                        <outlet property="headerView" destination="3or-dd-XkR" id="WW2-9g-dUG"/>
+                        <outlet property="subtitleLabel" destination="sE7-vO-zML" id="ZR6-aH-ViH"/>
+                        <outlet property="titleLabel" destination="jzx-z9-dAX" id="3G1-EG-r3j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7e-cs-WYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383.19999999999999" y="-987.25637181409309"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="45V-35-Xq8">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="muR-RI-t25" customClass="ChatViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4b-S9-7Hj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNb-Xn-6D6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="-562"/>
+        </scene>
+        <!--Meeting Tab View Controller-->
+        <scene sceneID="fzT-RW-SYW">
+            <objects>
+                <viewController storyboardIdentifier="MeetingTabViewController" id="tbN-FR-6d4" customClass="MeetingTabViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="juK-4x-t2m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OLQ-d9-0E6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgN-nv-wir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="-1216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="memoTo_header_white_icon" width="37" height="28"/>
+    </resources>
+</document>

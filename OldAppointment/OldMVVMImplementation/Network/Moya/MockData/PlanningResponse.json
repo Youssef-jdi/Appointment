@@ -1,0 +1,55 @@
+{
+    "data": {
+        "appointments" : [
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "date": "Heele Dag",
+                "timestamp": 1554217385.0,
+                "place": "Haarlem"
+            },
+            {
+                "type": 4,
+                "title": "MOM Type Planning",
+                "date": "Heele Dag",
+                "timestamp": 1554217385.0,
+                "place": "Den Haag"
+            },
+            {
+                "type": 5,
+                "title": "Memo Type Planning",
+                "date": "Heele Dag",
+                "timestamp": 1554217385.0,
+                "place": "Berlin"
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "date": "Heele Dag",
+                "timestamp": 1551744000.0,
+                "place": "Haarlem"
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "date": "09:15 - 15:05",
+                "timestamp": 1554822185.0,
+                "place": "Lelystad"
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "date": "01:30 - 02:00",
+                "timestamp": 1554908585.0,
+                "place": "Amsterdam"
+            },
+            {
+                "type": 6,
+                "title": "Holiday Type Planning",
+                "date": "The Whole Year!!!",
+                "timestamp": 1555513385.0,
+                "place": "Amsterdam"
+            }
+        ]
+    }
+}

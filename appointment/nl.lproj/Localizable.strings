@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  appointment
+
+  Created by Onur Hüseyin Çantay on 27.02.2019.
+  Copyright © 2019 DTT. All rights reserved.
+*/
+"login" = "inloggen";
+"register" = "registreren";
+"tutorial" = "tutorial";
+"skip" = "overslaan";
+"haveAccount" = "ik heb al een account";
+"addProfilePhoto"  = "profielfoto / logo bedrijf toevoegen";
+"name" = "voornaam";
+"surname"= "achternaam";
+"email" = "e-mail";
+"password" = "wachtwoord";
+"rePassword" = "nogmaals niuew wachtwoord";
+"bussinesProfile" = "Aanvullig voor een zakelijk profiel (optioneel)";
+"function" = "functie";
+"kvkNumber" = "KvK nummer";
+"address" = "adres";
+"postalCode" = "postcode + woonplaats";
+"dontHaveAccount" = "ik heb nog geen account";
+"forgotPassword" = "wachtwoord vergeten?";
+"wrongCredentials" = "e-mailadres en/of wachtwoord onjuist";
+"sendEmailDescription" = "vul hieronder uw e-mailadres in U ontvangt een e-mail om uw wachtwoord te wijzigen";
+"send" = "verstuur";
+"next" = "volgende";
+"addPhoto" = "profielfoto / logo bedrijf toevoegen";
+/// SyncScreen
+
+"synchronize" = "synchroniseren";

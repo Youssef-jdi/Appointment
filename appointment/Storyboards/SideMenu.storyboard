@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YCB-nd-9Ei">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Side Menu View Controller-->
+        <scene sceneID="zGG-US-4MB">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="YCB-nd-9Ei" customClass="SideMenuViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZj-by-lnl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPB-O3-2MJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dq6-b7-ACn">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="180"/>
+                                        <color key="backgroundColor" name="appDimGray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="YgZ-9M-JiJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-vG-ch6">
+                                        <rect key="frame" x="114" y="0.0" width="300" height="180"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fRV-sZ-gXo">
+                                                <rect key="frame" x="30" y="44" width="240" height="116"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deelnemers" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-mp-pN0" customClass="RoundedImageView" customModule="appointment" customModuleProvider="target">
+                                                        <rect key="frame" x="97.5" y="0.0" width="45" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="GNb-mp-pN0" secondAttribute="height" id="7Os-yV-GkA"/>
+                                                            <constraint firstAttribute="width" constant="45" id="m0h-YD-4c2"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iwf-Rx-RNb">
+                                                        <rect key="frame" x="60" y="65" width="120.5" height="51"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2m-5l-nBZ">
+                                                                <rect key="frame" x="35" y="0.0" width="50" height="50"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                                                <color key="textColor" name="appLightGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEd-9R-N3Y">
+                                                                <rect key="frame" x="0.0" y="50" width="120.5" height="1"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                                                <color key="textColor" name="appLightGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="appDimGray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fRV-sZ-gXo" secondAttribute="bottom" constant="20" id="CMt-dA-Ooj"/>
+                                            <constraint firstItem="fRV-sZ-gXo" firstAttribute="width" secondItem="hqf-vG-ch6" secondAttribute="width" multiplier="0.8" id="Pq4-WA-kFF"/>
+                                            <constraint firstItem="fRV-sZ-gXo" firstAttribute="centerX" secondItem="hqf-vG-ch6" secondAttribute="centerX" id="YT6-Vz-nol"/>
+                                            <constraint firstItem="fRV-sZ-gXo" firstAttribute="top" secondItem="hqf-vG-ch6" secondAttribute="top" constant="44" id="vve-0e-zXq"/>
+                                            <constraint firstAttribute="width" constant="300" id="vwR-kw-wWV"/>
+                                            <constraint firstAttribute="height" constant="180" id="x5S-vC-Trh"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9C-Rh-6RZ">
+                                        <rect key="frame" x="114" y="180" width="300" height="716"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="MHb-5H-LkB"/>
+                                        </constraints>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="f9C-Rh-6RZ" firstAttribute="top" secondItem="hqf-vG-ch6" secondAttribute="bottom" id="1Ga-0V-U3t"/>
+                                    <constraint firstItem="hqf-vG-ch6" firstAttribute="top" secondItem="aPB-O3-2MJ" secondAttribute="top" id="4If-MO-mqN"/>
+                                    <constraint firstAttribute="trailing" secondItem="hqf-vG-ch6" secondAttribute="trailing" id="Bjy-kL-l1F"/>
+                                    <constraint firstItem="Dq6-b7-ACn" firstAttribute="top" secondItem="hqf-vG-ch6" secondAttribute="top" id="KRc-SU-JJK"/>
+                                    <constraint firstItem="Dq6-b7-ACn" firstAttribute="leading" secondItem="aPB-O3-2MJ" secondAttribute="leading" id="RlH-ve-ROn"/>
+                                    <constraint firstItem="hqf-vG-ch6" firstAttribute="leading" secondItem="Dq6-b7-ACn" secondAttribute="trailing" id="Z8D-i2-v1B"/>
+                                    <constraint firstAttribute="bottom" secondItem="f9C-Rh-6RZ" secondAttribute="bottom" id="dAl-hd-scO"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9C-Rh-6RZ" secondAttribute="trailing" id="iFB-ig-M5s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ckS-m5-sY8"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aPB-O3-2MJ" secondAttribute="bottom" id="Lk2-dp-eod"/>
+                            <constraint firstItem="aPB-O3-2MJ" firstAttribute="top" secondItem="tZj-by-lnl" secondAttribute="top" id="XTl-dv-Cot"/>
+                            <constraint firstAttribute="trailing" secondItem="aPB-O3-2MJ" secondAttribute="trailing" id="ea7-fr-8BT"/>
+                            <constraint firstItem="aPB-O3-2MJ" firstAttribute="leading" secondItem="tZj-by-lnl" secondAttribute="leading" id="qa8-n6-v74"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cdv-Xx-Tof"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="GNb-mp-pN0" id="5CW-Yk-mGC"/>
+                        <outlet property="tableView" destination="f9C-Rh-6RZ" id="yXw-lV-api"/>
+                        <outlet property="userEmailLabel" destination="EEd-9R-N3Y" id="wWy-gU-YdD"/>
+                        <outlet property="usernameLabel" destination="B2m-5l-nBZ" id="dAS-Mc-Ho3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQy-Jm-9Of" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="265.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Deelnemers" width="32" height="32"/>
+        <namedColor name="appDimGray">
+            <color red="0.41568627450980394" green="0.41568627450980394" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightGray">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

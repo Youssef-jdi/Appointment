@@ -1,0 +1,62 @@
+{
+    "data": {
+        "appointments" : [
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553472000.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553472000.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553472000.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553472000.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553558400.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553558400.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1553558400.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 3,
+                "totalCount": 2
+            }
+        ]
+    }
+}

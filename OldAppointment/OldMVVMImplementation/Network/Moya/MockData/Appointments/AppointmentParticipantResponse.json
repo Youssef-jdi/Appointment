@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "id": 2,
+            "givenName": "Bob",
+            "familyName": "van de Huis",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-LHASKDNALKDMASDA42423423",
+            "emailAddress": "bob@mijnhuis.nl",
+            "isBanned": false,
+            "credits": 100,
+            "availableDate": null
+        },
+        {
+            "id": 39,
+            "givenName": "Marie",
+            "familyName": "de Lekker",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-LHASKDNALKDMASDA42423423",
+            "emailAddress": "marie@hotmail.nl",
+            "isBanned": false,
+            "credits": 70,
+            "availableDate": {
+                "timestamp": 24234234324324,
+                "comment": "This time is perfect for me!"
+            }
+        },
+        {
+            "id": 14,
+            "givenName": "Jan",
+            "familyName": "van Galenstraat",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-LHASKDNALKDMASDA42423423",
+            "emailAddress": "van@gmail.com",
+            "isBanned": false,
+            "credits": 200,
+            "availableDate": {
+                "timestamp": 24234234324324,
+                "comment": null
+            }
+        }
+    ]
+}

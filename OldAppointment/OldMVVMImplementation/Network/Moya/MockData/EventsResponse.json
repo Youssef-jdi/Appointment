@@ -1,0 +1,87 @@
+{
+    "data": {
+        "events":[
+            {
+                "id": 1,
+                "interactionTypeId": 0,
+                "appointmentTypeId": 3,
+                "appointmentId": "a12312412adsa",
+                "owner": "Sam",
+                "isRead": true,
+                "appointmentName": "Fitness",
+                "timestamp": 1551398400.0
+            },
+            {
+                "id": 2,
+                "interactionTypeId": 2,
+                "appointmentTypeId": 1,
+                "appointmentId": "a12312412adsa",
+                "owner": "Onur",
+                "isRead": false,
+                "timestamp": 1551333400.0,
+                "appointmentName": "Just Chill"
+            },
+            {
+                "id": 3,
+                "interactionTypeId": 2,
+                "appointmentTypeId": 2,
+                "appointmentId": "a12312412adsa",
+                "owner": "Callum",
+                "isRead": false,
+                "appointmentId": "a12312412adsa",
+                "timestamp": 1552398400.0,
+                "appointmentName": "Breakfast"
+            },
+            {
+                "id": 4,
+                "interactionTypeId": 0,
+                "appointmentTypeId": 0,
+                "appointmentId": "a12312412adsa",
+                "owner": "Dylan",
+                "isRead": true,
+                "timestamp": 1551498400.0,
+                "appointmentName": "Lunch"
+            },
+            {
+                "id": 5,
+                "interactionTypeId": 1,
+                "appointmentTypeId": 0,
+                "appointmentId": "a12312412adsa",
+                "owner": "Suhaib",
+                "isRead": true,
+                "timestamp": 1561398400.0,
+                "appointmentName": "Dinner"
+            },
+            {
+                "id": 6,
+                "interactionTypeId": 1,
+                "appointmentTypeId": 1,
+                "appointmentId": "a12312412adsa",
+                "owner": "Irina",
+                "isRead": false,
+                "timestamp": 1511398400.0,
+                "appointmentName": "Party"
+            },
+            {
+                "id": 7,
+                "interactionTypeId": 3,
+                "appointmentTypeId": 0,
+                "appointmentId": "a12312412adsa",
+                "owner": "Jeffrey",
+                "isRead": true,
+                "timestamp": 1251398400.0,
+                "appointmentName": "Disco"
+            },
+            {
+                "id": 8,
+                "interactionTypeId": 0,
+                "appointmentTypeId": 0,
+                "appointmentId": "a12312412adsa",
+                "owner": "Rick",
+                "isRead": false,
+                "timestamp": 1551393200.0,
+                "appointmentName": "Festival"
+            }
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddDateCollectionCell" customModule="appointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sB5-EN-RFq">
+                    <rect key="frame" x="8" y="8" width="41.5" height="23.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuG-BK-Ry9">
+                            <rect key="frame" x="0.0" y="0.0" width="22.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                            <color key="textColor" name="appDarkRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE1-y4-r4L">
+                            <rect key="frame" x="24.5" y="0.0" width="17" height="23.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <color key="textColor" name="appDarkRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X94-GG-aPs">
+                    <rect key="frame" x="65.5" y="19.5" width="462.5" height="1"/>
+                    <color key="backgroundColor" name="appContactsGray"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ym6-p3-5Hw"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C7S-H6-xRu">
+                    <rect key="frame" x="65.5" y="20.5" width="462.5" height="39.5"/>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Uk5-NH-bmZ">
+                    <rect key="frame" x="65.5" y="0.0" width="462.5" height="20.5"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="C7S-H6-xRu" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="0bE-hZ-jSh"/>
+                <constraint firstItem="sB5-EN-RFq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="7AQ-wE-jxc"/>
+                <constraint firstItem="sB5-EN-RFq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="81d-iG-lV9"/>
+                <constraint firstItem="Uk5-NH-bmZ" firstAttribute="bottom" secondItem="X94-GG-aPs" secondAttribute="bottom" id="ARS-My-CBW"/>
+                <constraint firstItem="X94-GG-aPs" firstAttribute="leading" secondItem="sB5-EN-RFq" secondAttribute="trailing" constant="16" id="Ksc-9q-5aU"/>
+                <constraint firstAttribute="top" secondItem="Uk5-NH-bmZ" secondAttribute="top" id="LXW-Nu-vh6"/>
+                <constraint firstAttribute="trailing" secondItem="X94-GG-aPs" secondAttribute="trailing" id="S6I-oM-IhJ"/>
+                <constraint firstItem="Uk5-NH-bmZ" firstAttribute="leading" secondItem="X94-GG-aPs" secondAttribute="leading" id="f9w-fn-kai"/>
+                <constraint firstItem="C7S-H6-xRu" firstAttribute="trailing" secondItem="X94-GG-aPs" secondAttribute="trailing" id="hPV-UD-63K"/>
+                <constraint firstItem="C7S-H6-xRu" firstAttribute="leading" secondItem="X94-GG-aPs" secondAttribute="leading" id="irM-ac-bxl"/>
+                <constraint firstItem="Uk5-NH-bmZ" firstAttribute="trailing" secondItem="X94-GG-aPs" secondAttribute="trailing" id="lsQ-iS-FR5"/>
+                <constraint firstItem="X94-GG-aPs" firstAttribute="centerY" secondItem="sB5-EN-RFq" secondAttribute="centerY" id="moK-wS-SVu"/>
+                <constraint firstItem="C7S-H6-xRu" firstAttribute="top" secondItem="X94-GG-aPs" secondAttribute="bottom" id="q17-zA-TFC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomGridView" destination="C7S-H6-xRu" id="Sjq-BI-DAp"/>
+                <outlet property="seperatorView" destination="X94-GG-aPs" id="IKm-QY-0pU"/>
+                <outlet property="timeLabel" destination="MuG-BK-Ry9" id="ILR-hx-qdu"/>
+                <outlet property="topGridView" destination="Uk5-NH-bmZ" id="xSq-T4-7YM"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="53.571428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appContactsGray">
+            <color red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appDarkRed">
+            <color red="0.94901960784313721" green="0.31372549019607843" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

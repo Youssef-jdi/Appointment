@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InvitationSetupCell" id="7dA-RY-Kxh" customClass="InvitationSetupCell" customModule="appointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7dA-RY-Kxh" id="Ii0-BZ-laI">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-7b-srv">
+                        <rect key="frame" x="20" y="10" width="333" height="36"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="To_do_list" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-iE-pa6">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Sh-iE-pa6" secondAttribute="height" multiplier="1:1" id="7CG-S4-fgc"/>
+                                    <constraint firstAttribute="height" constant="25" id="ZiY-Ue-odS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="To do list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAB-he-hoG">
+                                <rect key="frame" x="66" y="0.0" width="218" height="36"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-Pd-Aha">
+                                <rect key="frame" x="314" y="0.0" width="19" height="36"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="13"/>
+                                <color key="textColor" name="appGrayChateau"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="u6G-7b-srv" secondAttribute="bottom" constant="10" id="DJV-lO-i0b"/>
+                    <constraint firstAttribute="trailing" secondItem="u6G-7b-srv" secondAttribute="trailing" constant="30" id="Q8e-gu-rNE"/>
+                    <constraint firstItem="u6G-7b-srv" firstAttribute="top" secondItem="Ii0-BZ-laI" secondAttribute="top" constant="10" id="VCg-2F-O8w"/>
+                    <constraint firstItem="u6G-7b-srv" firstAttribute="leading" secondItem="Ii0-BZ-laI" secondAttribute="leading" constant="20" id="ZT6-Rt-zJ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="eCy-Pd-Aha" id="MaM-mH-7RJ"/>
+                <outlet property="titleLabel" destination="PAB-he-hoG" id="Oyd-dr-qoo"/>
+                <outlet property="typeImageView" destination="4Sh-iE-pa6" id="gev-G9-IwB"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="43.191964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="To_do_list" width="36" height="36"/>
+        <namedColor name="appGrayChateau">
+            <color red="0.63529411764705879" green="0.63137254901960782" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

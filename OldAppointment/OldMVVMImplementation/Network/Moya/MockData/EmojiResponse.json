@@ -1,0 +1,151 @@
+{
+    "data": {
+        "version": 1,
+        "categories": [
+            {
+                "name": "smileys",
+                "emojis": [
+                    {
+                        "code": ":smile:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":laugh:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":doubt:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":sad:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    }
+                ]
+            },
+            {
+                "name": "hands",
+                "emojis": [
+                    {
+                        "code": ":wave:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/Waving_Hand_Sign_Emoji_60x60.png?5694220823668780860"
+                    },
+                    {
+                        "code": ":peace:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/Victory_Hand_Emoji_60x60.png?5694220823668780860"
+                    },
+                    {
+                        "code": ":thumbsup:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/Thumbs_Up_Hand_Sign_Emoji_60x60.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":thumbsdown:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/White_Thumbs_Down_Sign_Emoji_Icon_60x60.png?16285229369325405128"
+                    },
+                    {
+                        "code": ":ok:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/Ok_Hand_Sign_Emoji_60x60.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":nose:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/Nose_Emoji_60x60.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":flexing:",
+                        "url": "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    }
+                ]
+            },
+            {
+                "name": "animals",
+                "emojis": [
+                    {
+                        "code": ":cat:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":mouse:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":sheep:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":dog:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    }
+                ]
+            },
+            {
+                "name": "flags",
+                "emojis": [
+                    {
+                        "code": ":cat:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":mouse:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":sheep:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":dog:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":cat:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":mouse:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":sheep:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":dog:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":cat:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":mouse:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":sheep:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":dog:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":cat:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":mouse:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":sheep:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    },
+                    {
+                        "code": ":dog:",
+                        "url":  "https://cdn.shopify.com/s/files/1/1061/1924/files/Flexing_Muscles_Emoji.png?13841935165353004195"
+                    }
+                ]
+            }
+        ]
+    }
+}

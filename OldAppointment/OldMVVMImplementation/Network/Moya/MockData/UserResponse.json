@@ -1,0 +1,14 @@
+{
+    "data": {
+        "id": 1,
+        "givenName": "Daan",
+        "familyName": "Maan",
+        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+        "emailAddress": "daan@maan.nl",
+        "credits": 100,
+        "isBanned": false,
+        "firebaseId": "-LH23sadlksd234lsmfsdlfasdff",
+        "registeredAt": 1551272511,
+        "updatedAt": 1551272511
+    }
+}

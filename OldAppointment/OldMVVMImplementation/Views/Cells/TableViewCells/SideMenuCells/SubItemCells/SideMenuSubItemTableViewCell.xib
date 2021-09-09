@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuSubItemTableViewCell" rowHeight="328" id="KGk-i7-Jjw" customClass="SideMenuSubItemTableViewCell" customModule="appointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="328"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="327.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HV-6I-1P4">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="327.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAI-5c-lmo">
+                                <rect key="frame" x="0.0" y="0.0" width="313" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu_Appointments" translatesAutoresizingMaskIntoConstraints="NO" id="jfF-Td-gSt">
+                                        <rect key="frame" x="8" y="13.5" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="1pw-tV-DBe"/>
+                                            <constraint firstAttribute="width" secondItem="jfF-Td-gSt" secondAttribute="height" id="beg-Yz-H1P"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AFSPRAKEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79F-gf-l9b">
+                                        <rect key="frame" x="57" y="19.5" width="248" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="appDimGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="79F-gf-l9b" firstAttribute="leading" secondItem="jfF-Td-gSt" secondAttribute="trailing" constant="16" id="EIr-jr-E7v"/>
+                                    <constraint firstAttribute="trailing" secondItem="79F-gf-l9b" secondAttribute="trailing" constant="8" id="TZI-gR-bVo"/>
+                                    <constraint firstItem="jfF-Td-gSt" firstAttribute="centerY" secondItem="cAI-5c-lmo" secondAttribute="centerY" id="Vtl-rh-oOW"/>
+                                    <constraint firstItem="jfF-Td-gSt" firstAttribute="leading" secondItem="cAI-5c-lmo" secondAttribute="leading" constant="8" id="WNa-O4-DIG"/>
+                                    <constraint firstAttribute="height" constant="60" id="i4L-x4-f4P"/>
+                                    <constraint firstItem="79F-gf-l9b" firstAttribute="centerY" secondItem="jfF-Td-gSt" secondAttribute="centerY" id="vcG-kA-hBZ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxe-Pz-2fx">
+                                <rect key="frame" x="16" y="64" width="297" height="263.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cxe-Pz-2fx" firstAttribute="leading" secondItem="jfF-Td-gSt" secondAttribute="leading" constant="8" id="3aS-2t-tUG"/>
+                            <constraint firstAttribute="bottom" secondItem="cxe-Pz-2fx" secondAttribute="bottom" id="4Q1-rt-uKd"/>
+                            <constraint firstAttribute="trailing" secondItem="cAI-5c-lmo" secondAttribute="trailing" id="AT2-Up-w1c"/>
+                            <constraint firstItem="cxe-Pz-2fx" firstAttribute="top" secondItem="cAI-5c-lmo" secondAttribute="bottom" constant="4" id="LDQ-yb-Lo8"/>
+                            <constraint firstItem="cAI-5c-lmo" firstAttribute="top" secondItem="6HV-6I-1P4" secondAttribute="top" id="NSy-7P-FYr"/>
+                            <constraint firstItem="cAI-5c-lmo" firstAttribute="leading" secondItem="6HV-6I-1P4" secondAttribute="leading" id="XCf-Gn-lj3"/>
+                            <constraint firstAttribute="trailing" secondItem="cxe-Pz-2fx" secondAttribute="trailing" id="pL9-Ix-a3Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6HV-6I-1P4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="19g-hU-Vzn"/>
+                    <constraint firstAttribute="bottom" secondItem="6HV-6I-1P4" secondAttribute="bottom" id="6YD-oo-a1o"/>
+                    <constraint firstAttribute="trailing" secondItem="6HV-6I-1P4" secondAttribute="trailing" id="Xhu-4c-MNy"/>
+                    <constraint firstItem="6HV-6I-1P4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ydz-M3-QZe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerLabel" destination="79F-gf-l9b" id="wbC-Sv-vcy"/>
+                <outlet property="iconImageView" destination="jfF-Td-gSt" id="FDh-Mj-HBs"/>
+                <outlet property="tableView" destination="cxe-Pz-2fx" id="ddF-Ao-UcE"/>
+            </connections>
+            <point key="canvasLocation" x="143.19999999999999" y="281.55922038980509"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Menu_Appointments" width="16" height="30"/>
+        <namedColor name="appDimGray">
+            <color red="0.41568627450980394" green="0.41568627450980394" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

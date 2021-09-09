@@ -1,0 +1,58 @@
+{
+    "data": {
+        "appointments" : [
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "timestamp": 1553769288.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 5
+            },
+            {
+                "type": 4,
+                "title": "MOM Type Planning",
+                "timestamp": 1554374088.0,
+                
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 3
+            },
+            {
+                "type": 5,
+                "title": "Memo Type Planning",
+                "timestamp": 1554978888.0,
+                "authSync": 1,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 2
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "timestamp": 1555065288.0,
+                "totalCount": 6,
+                "durationTimeDescription": "19:03 - 20:25",
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "timestamp": 1555151688.0,
+                "totalCount": 1,
+                "durationTimeDescription": "19:03 - 20:25",
+            },
+            {
+                "type": 2,
+                "title": "Group Type Planning",
+                "timestamp": 1555238088.0,
+                "authSync": 3,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 2
+            },
+            {
+                "type": 5,
+                "title": "Holiday Type Planning",
+                "timestamp": 1555842888.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "authSync": 2
+            }
+        ]
+    }
+}

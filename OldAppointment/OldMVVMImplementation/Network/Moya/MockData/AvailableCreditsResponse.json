@@ -1,0 +1,16 @@
+{
+    "credits": [
+        {
+            "amount": 10,
+            "localizedPrice": "€ 10"
+        },
+        {
+            "amount": 20,
+            "localizedPrice": "€ 20"
+        },
+        {
+            "amount": 30,
+            "localizedPrice": "€ 30"
+        }
+    ]
+}

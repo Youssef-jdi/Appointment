@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  appointment
+
+  Created by Onur Hüseyin Çantay on 27.02.2019.
+  Copyright © 2019 DTT. All rights reserved.
+*/
+"login" = "login";
+"register" = "register";
+"tutorial" = "tutorial";
+"skip" = "skip";
+"haveAccount" = "i already have an account";
+"name" = "name";
+"surname"= "surname";
+"email" = "email";
+"password" = "password";
+"rePassword" = "re enter password";
+"bussinesProfile" = "complementary for a business profile (optional)";
+"function" = "function";
+"kvkNumber" = "KvK number";
+"address" = "address";
+"postalCode" = "postal code + residence";
+"dontHaveAccount" = "i don't have an account yet";
+"forgotPassword" = "forgot password?";
+"wrongCredentials" = "Email and / or password incorrect";
+"sendEmailDescription" = "enter your e-mail address below. You will receive an e-mail to change your password";
+"send" = "send";
+"next" = "next";
+"addPhoto" = "add profile photo / company logo";
+/// SyncScreen
+
+"synchronize" = "synchronize";

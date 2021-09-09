@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+        </array>
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="V8c-3u-ee0">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" automaticallyAdjustsScrollViewInsets="NO" id="cdG-Dz-G1P" customClass="RegisterViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kJi-hV-Z5j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="py2-bU-1Wm">
+                                <rect key="frame" x="20.5" y="44" width="373" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pn-MZ-sXa">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1Hn-MX-fU7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                        <state key="normal" title="ALREADY HAVE AN ACCOUNT">
+                                            <color key="titleColor" name="appBlue"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alreadyHaveAccountButtonTapped:" destination="cdG-Dz-G1P" eventType="touchUpInside" id="enc-Zg-BcD"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow_Right_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="mc7-Hg-Dkc">
+                                        <rect key="frame" x="357" y="0.0" width="16" height="80"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brm-Ly-mdw" userLabel="Separator View">
+                                <rect key="frame" x="0.0" y="124" width="414" height="1"/>
+                                <color key="backgroundColor" name="appGrayMagnesium"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ymd-1r-WFa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25o-TY-hOR">
+                                <rect key="frame" x="0.0" y="125" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08W-Ga-BE9">
+                                        <rect key="frame" x="20.5" y="23.5" width="373" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="appLightGray"/>
+                                <constraints>
+                                    <constraint firstItem="08W-Ga-BE9" firstAttribute="centerX" secondItem="25o-TY-hOR" secondAttribute="centerX" id="1xf-Oz-e3v"/>
+                                    <constraint firstAttribute="height" constant="70" id="pxh-4I-Miz"/>
+                                    <constraint firstItem="08W-Ga-BE9" firstAttribute="centerY" secondItem="25o-TY-hOR" secondAttribute="centerY" id="uru-p7-iJv"/>
+                                    <constraint firstItem="08W-Ga-BE9" firstAttribute="width" secondItem="25o-TY-hOR" secondAttribute="width" multiplier="0.9" id="vQo-oT-U9a"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpy-7U-oco">
+                                <rect key="frame" x="0.0" y="195" width="414" height="1005"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBa-u9-Aiu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1005"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xfp-HQ-t1D">
+                                                <rect key="frame" x="0.0" y="5" width="414" height="980"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="FFd-WH-MeB" userLabel="Image Stack View">
+                                                        <rect key="frame" x="20.5" y="0.0" width="373" height="60"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu_Profile_Picture" translatesAutoresizingMaskIntoConstraints="NO" id="fFu-yv-tyy" customClass="RoundedImageView" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="TMg-8s-jXe"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="hHB-Mi-1X5"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add profile photo / logo company" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQJ-Hl-qOY">
+                                                                <rect key="frame" x="82" y="8" width="249" height="44.5"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-At-g9y">
+                                                                <rect key="frame" x="353" y="20" width="20" height="20"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="LmR-zY-EcF"/>
+                                                                    <constraint firstAttribute="width" secondItem="Kqd-At-g9y" secondAttribute="height" multiplier="1:1" id="zuZ-7l-Pke"/>
+                                                                </constraints>
+                                                                <state key="normal" image="add_button_blue"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView clipsSubviews="YES" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3zN-N0-ma9" userLabel="Input Stack View">
+                                                        <rect key="frame" x="20.5" y="80" width="373" height="750"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-ad-uJe" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="15a-rW-fMC"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mxf-1f-Nf9" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="150" width="373" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="g1E-pp-LCs"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r96-vV-Il7" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="300" width="373" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="SAb-eE-5dK"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IeL-nr-8uI" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="450" width="373" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="CFG-4W-PuK"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fN-Um-xqf" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="600" width="373" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="U6A-rb-GO7"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-XQ-iso">
+                                                                <rect key="frame" x="186.5" y="750" width="0.0" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="IeL-nr-8uI" firstAttribute="width" secondItem="wgP-ad-uJe" secondAttribute="width" id="7OI-7z-5D2"/>
+                                                            <constraint firstItem="wgP-ad-uJe" firstAttribute="width" secondItem="3zN-N0-ma9" secondAttribute="width" id="AiG-aD-bp6"/>
+                                                            <constraint firstItem="Mxf-1f-Nf9" firstAttribute="width" secondItem="wgP-ad-uJe" secondAttribute="width" id="TJh-3K-lSl"/>
+                                                            <constraint firstItem="r96-vV-Il7" firstAttribute="width" secondItem="Mxf-1f-Nf9" secondAttribute="width" id="Vb6-Bz-DSb"/>
+                                                            <constraint firstItem="7fN-Um-xqf" firstAttribute="width" secondItem="wgP-ad-uJe" secondAttribute="width" id="cEW-Z3-KGH"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="lRx-vx-ImP" userLabel="Optional Stack View">
+                                                        <rect key="frame" x="0.0" y="850" width="414" height="130"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhc-fr-h8e" userLabel="Optional View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-Ga-3Jo">
+                                                                        <rect key="frame" x="10.5" y="25" width="393" height="20"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="complementary for a business profile (optional)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYL-Us-fEq">
+                                                                                <rect key="frame" x="0.0" y="1" width="373" height="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFs-BG-CYw">
+                                                                                <rect key="frame" x="373" y="0.0" width="20" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" secondItem="ZFs-BG-CYw" secondAttribute="height" multiplier="1:1" id="RRW-53-GtX"/>
+                                                                                    <constraint firstAttribute="height" constant="20" id="sLt-vJ-g8E"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="PointerBottom"/>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="appLightGray"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="70" id="4IQ-ue-DOd"/>
+                                                                    <constraint firstItem="DYg-Ga-3Jo" firstAttribute="centerX" secondItem="lhc-fr-h8e" secondAttribute="centerX" id="Bwr-sS-0Z1"/>
+                                                                    <constraint firstItem="DYg-Ga-3Jo" firstAttribute="centerY" secondItem="lhc-fr-h8e" secondAttribute="centerY" id="hSl-Wd-6NM"/>
+                                                                    <constraint firstItem="DYg-Ga-3Jo" firstAttribute="width" secondItem="lhc-fr-h8e" secondAttribute="width" multiplier="0.95" id="ug0-Kw-vBX"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k0t-pS-oOw" userLabel="Optional Stack View">
+                                                                <rect key="frame" x="0.0" y="82" width="414" height="240"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Function" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8J-nO-LsX" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                        <rect key="frame" x="20.5" y="0.0" width="373" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="fk8-o5-cvw"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="KvK number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RoL-fE-k4G" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                        <rect key="frame" x="20.5" y="65" width="373" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="Pke-NS-Q9v"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbP-EJ-iwa" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                        <rect key="frame" x="20.5" y="130" width="373" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="P2h-fX-QrA"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postal code + Residence" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfk-03-HkL" customClass="CustomTextField" customModule="appointment" customModuleProvider="target">
+                                                                        <rect key="frame" x="20.5" y="195" width="373" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="K7n-8V-fTC"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="oneLineBorder" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-GD-DVQ">
+                                                                        <rect key="frame" x="186.5" y="240" width="41.5" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="gbP-EJ-iwa" firstAttribute="width" secondItem="u8J-nO-LsX" secondAttribute="width" id="28y-vy-Alo"/>
+                                                                    <constraint firstItem="RoL-fE-k4G" firstAttribute="width" secondItem="u8J-nO-LsX" secondAttribute="width" id="BXP-lJ-7Cc"/>
+                                                                    <constraint firstItem="Qfk-03-HkL" firstAttribute="width" secondItem="u8J-nO-LsX" secondAttribute="width" id="RSh-LC-STz"/>
+                                                                    <constraint firstItem="u8J-nO-LsX" firstAttribute="width" secondItem="k0t-pS-oOw" secondAttribute="width" multiplier="0.9" id="wet-la-kzN"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnd-th-6cz" customClass="ButtonDoneRight" customModule="appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="62" y="94" width="290" height="36"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="20"/>
+                                                                <state key="normal" title="Register">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                        <color key="value" name="appBlue"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="registerButtonTapped:" destination="cdG-Dz-G1P" eventType="touchUpInside" id="tN8-c4-dry"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="lhc-fr-h8e" firstAttribute="width" secondItem="lRx-vx-ImP" secondAttribute="width" id="Nw9-fA-MEk"/>
+                                                            <constraint firstItem="Cnd-th-6cz" firstAttribute="width" secondItem="lRx-vx-ImP" secondAttribute="width" multiplier="0.7" id="Sss-z5-cj0"/>
+                                                            <constraint firstItem="k0t-pS-oOw" firstAttribute="width" secondItem="lRx-vx-ImP" secondAttribute="width" id="miI-CB-f84"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="3zN-N0-ma9" firstAttribute="width" secondItem="xfp-HQ-t1D" secondAttribute="width" multiplier="0.9" id="GXp-Hc-f1v"/>
+                                                    <constraint firstItem="lRx-vx-ImP" firstAttribute="width" secondItem="xfp-HQ-t1D" secondAttribute="width" id="lax-tX-mFc"/>
+                                                    <constraint firstItem="FFd-WH-MeB" firstAttribute="width" secondItem="xfp-HQ-t1D" secondAttribute="width" multiplier="0.9" id="sk6-Rw-Vyz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="xfp-HQ-t1D" firstAttribute="width" secondItem="PBa-u9-Aiu" secondAttribute="width" id="LgN-s4-D6h"/>
+                                            <constraint firstAttribute="bottom" secondItem="xfp-HQ-t1D" secondAttribute="bottom" constant="20" id="XG1-Y0-Nxt"/>
+                                            <constraint firstItem="xfp-HQ-t1D" firstAttribute="centerX" secondItem="PBa-u9-Aiu" secondAttribute="centerX" id="tFG-ub-NXs"/>
+                                            <constraint firstItem="xfp-HQ-t1D" firstAttribute="top" secondItem="PBa-u9-Aiu" secondAttribute="top" constant="5" id="xp8-UU-FoD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PBa-u9-Aiu" firstAttribute="top" secondItem="Tpy-7U-oco" secondAttribute="top" id="BEO-6J-j7h"/>
+                                    <constraint firstAttribute="bottom" secondItem="PBa-u9-Aiu" secondAttribute="bottom" id="EoJ-Oc-SH9"/>
+                                    <constraint firstAttribute="width" secondItem="PBa-u9-Aiu" secondAttribute="width" id="P7H-at-OAV"/>
+                                    <constraint firstItem="PBa-u9-Aiu" firstAttribute="height" secondItem="Tpy-7U-oco" secondAttribute="height" priority="250" id="Zb1-36-scV"/>
+                                    <constraint firstItem="PBa-u9-Aiu" firstAttribute="leading" secondItem="Tpy-7U-oco" secondAttribute="leading" id="m83-9f-5an"/>
+                                    <constraint firstAttribute="trailing" secondItem="PBa-u9-Aiu" secondAttribute="trailing" id="zGn-kY-AOL"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ImZ-07-bxS"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qXF-gu-qMD"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O6f-GX-e02"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tpy-7U-oco" firstAttribute="left" secondItem="kJi-hV-Z5j" secondAttribute="left" id="3I7-hP-rsE"/>
+                            <constraint firstItem="py2-bU-1Wm" firstAttribute="width" secondItem="kJi-hV-Z5j" secondAttribute="width" multiplier="0.9" id="Dnp-Ck-yV5"/>
+                            <constraint firstAttribute="right" secondItem="Tpy-7U-oco" secondAttribute="right" id="L5M-Wc-GAn"/>
+                            <constraint firstItem="brm-Ly-mdw" firstAttribute="top" secondItem="4Pn-MZ-sXa" secondAttribute="bottom" id="LQ1-E8-2tS"/>
+                            <constraint firstItem="brm-Ly-mdw" firstAttribute="width" secondItem="kJi-hV-Z5j" secondAttribute="width" id="f6G-yv-Onb"/>
+                            <constraint firstItem="25o-TY-hOR" firstAttribute="centerX" secondItem="kJi-hV-Z5j" secondAttribute="centerX" id="gWT-LN-YtK"/>
+                            <constraint firstItem="25o-TY-hOR" firstAttribute="width" secondItem="kJi-hV-Z5j" secondAttribute="width" id="hfh-VY-vaY"/>
+                            <constraint firstItem="py2-bU-1Wm" firstAttribute="centerX" secondItem="kJi-hV-Z5j" secondAttribute="centerX" id="ifV-Nj-1vv"/>
+                            <constraint firstItem="py2-bU-1Wm" firstAttribute="top" secondItem="O6f-GX-e02" secondAttribute="top" id="l1N-ch-7lP"/>
+                            <constraint firstItem="brm-Ly-mdw" firstAttribute="centerX" secondItem="kJi-hV-Z5j" secondAttribute="centerX" id="qh9-tU-t8c"/>
+                            <constraint firstItem="25o-TY-hOR" firstAttribute="top" secondItem="brm-Ly-mdw" secondAttribute="bottom" id="w1M-Fb-EkR"/>
+                            <constraint firstItem="Tpy-7U-oco" firstAttribute="top" secondItem="25o-TY-hOR" secondAttribute="bottom" id="wnM-5P-BOn"/>
+                            <constraint firstAttribute="bottom" secondItem="Tpy-7U-oco" secondAttribute="bottom" id="xVb-ze-sIl"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="KvKTextfield" destination="RoL-fE-k4G" id="OHm-lt-ekc"/>
+                        <outlet property="addPhotoLabel" destination="uQJ-Hl-qOY" id="XMi-km-LSs"/>
+                        <outlet property="addressTextfield" destination="gbP-EJ-iwa" id="GSm-Kz-7xE"/>
+                        <outlet property="buttonContainerView" destination="Fz4-TP-DfG" id="zst-Ay-1YN"/>
+                        <outlet property="collapseButton" destination="ZFs-BG-CYw" id="L36-f0-W6f"/>
+                        <outlet property="confirmPasswordTextfield" destination="7fN-Um-xqf" id="twh-5L-RLP"/>
+                        <outlet property="emailTextField" destination="r96-vV-Il7" id="P7i-ai-YTT"/>
+                        <outlet property="errorLabel" destination="2Wd-XQ-iso" id="rys-PN-WGs"/>
+                        <outlet property="functionTextfield" destination="u8J-nO-LsX" id="ENE-R3-j0O"/>
+                        <outlet property="haveAccountButton" destination="4Pn-MZ-sXa" id="6Se-Pi-hG1"/>
+                        <outlet property="imageStackView" destination="FFd-WH-MeB" id="qiv-3C-DIR"/>
+                        <outlet property="lastNameTextfield" destination="Mxf-1f-Nf9" id="oge-h9-Frk"/>
+                        <outlet property="nameTextfield" destination="wgP-ad-uJe" id="Vy9-zu-3GW"/>
+                        <outlet property="optionalErrorLabel" destination="7BZ-GD-DVQ" id="vRD-qb-2JZ"/>
+                        <outlet property="optionalLabel" destination="sYL-Us-fEq" id="hay-fc-BV6"/>
+                        <outlet property="optionalStackView" destination="k0t-pS-oOw" id="20B-tG-lnk"/>
+                        <outlet property="optionalView" destination="lhc-fr-h8e" id="Ami-ad-JB9"/>
+                        <outlet property="passwordTextfield" destination="IeL-nr-8uI" id="LLG-Sx-5z0"/>
+                        <outlet property="postalCodeTextfield" destination="Qfk-03-HkL" id="rUP-kO-Ac0"/>
+                        <outlet property="profilePictureImageView" destination="fFu-yv-tyy" id="mVb-fg-ksM"/>
+                        <outlet property="registerButton" destination="Cnd-th-6cz" id="iYg-4Y-AWp"/>
+                        <outlet property="registerLabel" destination="08W-Ga-BE9" id="0mI-d2-31f"/>
+                        <outlet property="scrollView" destination="Tpy-7U-oco" id="WqF-dp-R4j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zvl-4Y-Vl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Fz4-TP-DfG">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="KxD-Ta-9dr"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="7fN-Um-xqf">
+            <size key="intrinsicContentSize" width="137.5" height="17"/>
+        </designable>
+        <designable name="IeL-nr-8uI">
+            <size key="intrinsicContentSize" width="82.5" height="17"/>
+        </designable>
+        <designable name="Mxf-1f-Nf9">
+            <size key="intrinsicContentSize" width="89" height="18.5"/>
+        </designable>
+        <designable name="Qfk-03-HkL">
+            <size key="intrinsicContentSize" width="179" height="18.5"/>
+        </designable>
+        <designable name="RoL-fE-k4G">
+            <size key="intrinsicContentSize" width="98.5" height="18.5"/>
+        </designable>
+        <designable name="gbP-EJ-iwa">
+            <size key="intrinsicContentSize" width="73" height="18.5"/>
+        </designable>
+        <designable name="r96-vV-Il7">
+            <size key="intrinsicContentSize" width="61" height="18.5"/>
+        </designable>
+        <designable name="u8J-nO-LsX">
+            <size key="intrinsicContentSize" width="76.5" height="18.5"/>
+        </designable>
+        <designable name="wgP-ad-uJe">
+            <size key="intrinsicContentSize" width="90" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Arrow_Right_Blue" width="16" height="24"/>
+        <image name="Menu_Profile_Picture" width="56" height="56"/>
+        <image name="PointerBottom" width="8" height="8"/>
+        <image name="add_button_blue" width="28" height="29"/>
+        <namedColor name="appBlue">
+            <color red="0.24705882352941178" green="0.32941176470588235" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGrayMagnesium">
+            <color red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightGray">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

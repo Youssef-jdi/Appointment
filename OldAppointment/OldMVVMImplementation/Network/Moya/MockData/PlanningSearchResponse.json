@@ -1,0 +1,55 @@
+{
+    "data": {
+        "appointments" : [
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "timestamp": 1551398400.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 5
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "timestamp": 1551398400.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 5
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "durationTimeDescription": "19:03 - 20:25",
+                "timestamp": 1551398400.0,
+                "totalCount": 5
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "timestamp": 1551398400.0,
+                "totalCount": 5,
+                "durationTimeDescription": "19:03 - 20:25",
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "durationTimeDescription": "19:03 - 20:25",
+                "timestamp": 1551398400.0,
+                "totalCount": 5
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "durationTimeDescription": "19:03 - 20:25",
+                "timestamp": 1551398400.0,
+                "totalCount": 5
+            },
+            {
+                "type": 0,
+                "title": "Standart Type Planning",
+                "durationTimeDescription": "19:03 - 20:25",
+                "timestamp": 1551398400.0,
+                "totalCount": 5
+            },
+        ]
+    }
+}

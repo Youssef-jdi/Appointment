@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sync View Controller-->
+        <scene sceneID="NZE-44-5JP">
+            <objects>
+                <viewController storyboardIdentifier="SyncViewController" id="4Kt-ev-SHy" customClass="SyncViewController" customModule="appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="isw-w3-aZy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSF-SA-5sB" customClass="ButtonDoneRight" customModule="appointment" customModuleProvider="target">
+                                <rect key="frame" x="103.5" y="792" width="207" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0IZ-bQ-4lv"/>
+                                    <constraint firstAttribute="width" secondItem="iSF-SA-5sB" secondAttribute="height" multiplier="62:15" id="LVp-jd-LCC"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" name="appBlue"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="4Kt-ev-SHy" eventType="touchUpInside" id="ZkQ-0A-MtH"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="14H-OV-Fku">
+                                <rect key="frame" x="20.5" y="64" width="373" height="127"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tek-cp-zoD">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="127"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SYNCHRONISE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlR-d3-Ekl">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFb-Wj-sD6">
+                                                <rect key="frame" x="0.0" y="25.5" width="366" height="101.5"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor lectus vel interdum pharetra. Vivamus feugiat id mauris at mattis. Sed ei lobortis nisl, ut egestas nulla. Quisque eget luctus.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-RF-S1j">
+                                <rect key="frame" x="36" y="211" width="342.5" height="223"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5KM-AS-dxO">
+                                        <rect key="frame" x="0.0" y="0.0" width="342.5" height="103.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3c-Bw-K43">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook" translatesAutoresizingMaskIntoConstraints="NO" id="FO3-Ce-B8d">
+                                                        <rect key="frame" x="31.5" y="32" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="FO3-Ce-B8d" secondAttribute="height" id="LNH-8Q-gOc"/>
+                                                            <constraint firstAttribute="width" constant="40" id="zbe-9P-Rts"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="appBlue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t3c-Bw-K43" secondAttribute="height" id="bCI-3m-tXg"/>
+                                                    <constraint firstItem="FO3-Ce-B8d" firstAttribute="centerX" secondItem="t3c-Bw-K43" secondAttribute="centerX" id="pT5-jn-gTo"/>
+                                                    <constraint firstItem="FO3-Ce-B8d" firstAttribute="centerY" secondItem="t3c-Bw-K43" secondAttribute="centerY" id="thq-yK-hdd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmP-l4-GBh">
+                                                <rect key="frame" x="119.5" y="0.0" width="103.5" height="103.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gmail" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-9C-5JP">
+                                                        <rect key="frame" x="31.5" y="32" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="SJK-9C-5JP" secondAttribute="height" id="EpS-Y7-jME"/>
+                                                            <constraint firstAttribute="height" constant="40" id="P3E-JS-PFO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="appDarkRed"/>
+                                                <constraints>
+                                                    <constraint firstItem="SJK-9C-5JP" firstAttribute="centerY" secondItem="xmP-l4-GBh" secondAttribute="centerY" id="IET-TA-Jtx"/>
+                                                    <constraint firstItem="SJK-9C-5JP" firstAttribute="centerX" secondItem="xmP-l4-GBh" secondAttribute="centerX" id="b7X-G4-I7T"/>
+                                                    <constraint firstAttribute="width" secondItem="xmP-l4-GBh" secondAttribute="height" id="qYK-CD-aPW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqD-jy-jqP">
+                                                <rect key="frame" x="239" y="0.0" width="103.5" height="103.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Outlook" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-po-R4g">
+                                                        <rect key="frame" x="31.5" y="32" width="40" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="1N3-RD-pA1"/>
+                                                            <constraint firstAttribute="width" secondItem="gCf-po-R4g" secondAttribute="height" id="95X-9C-7HV"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="appOutlookBlue"/>
+                                                <constraints>
+                                                    <constraint firstItem="gCf-po-R4g" firstAttribute="centerY" secondItem="YqD-jy-jqP" secondAttribute="centerY" id="C58-tY-ydb"/>
+                                                    <constraint firstAttribute="width" secondItem="YqD-jy-jqP" secondAttribute="height" id="OIY-C3-0qp"/>
+                                                    <constraint firstItem="gCf-po-R4g" firstAttribute="centerX" secondItem="YqD-jy-jqP" secondAttribute="centerX" id="WAr-Oi-7Le"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="YqD-jy-jqP" firstAttribute="width" secondItem="YqD-jy-jqP" secondAttribute="height" id="cc3-v1-c4n"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CPi-ZV-YQ1">
+                                        <rect key="frame" x="59.5" y="119.5" width="223" height="103.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu_Linked_Yahoo" translatesAutoresizingMaskIntoConstraints="NO" id="7wL-UV-Wlz">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7wL-UV-Wlz" secondAttribute="height" id="gxr-cc-0QU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yDx-Ao-F1X">
+                                                <rect key="frame" x="119.5" y="0.0" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="appGrayChateau"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yDx-Ao-F1X" secondAttribute="height" id="mhb-xp-Fhh"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7wL-UV-Wlz" firstAttribute="width" secondItem="t3c-Bw-K43" secondAttribute="width" id="3SN-Qc-Kkx"/>
+                                    <constraint firstItem="yDx-Ao-F1X" firstAttribute="width" secondItem="t3c-Bw-K43" secondAttribute="width" id="Mdl-E2-kYN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YqD-jy-jqP" firstAttribute="width" secondItem="isw-w3-aZy" secondAttribute="width" multiplier="1/4" id="5Dr-eD-rg5"/>
+                            <constraint firstItem="14H-OV-Fku" firstAttribute="width" secondItem="isw-w3-aZy" secondAttribute="width" multiplier="0.9" id="IEY-2y-3LN"/>
+                            <constraint firstItem="t3c-Bw-K43" firstAttribute="width" secondItem="isw-w3-aZy" secondAttribute="width" multiplier="1/4" id="JtD-Wv-bdD"/>
+                            <constraint firstItem="iSF-SA-5sB" firstAttribute="centerX" secondItem="7Xh-Fp-RkT" secondAttribute="centerX" id="La3-Ll-2qi"/>
+                            <constraint firstItem="Fpj-RF-S1j" firstAttribute="centerX" secondItem="7Xh-Fp-RkT" secondAttribute="centerX" id="W9B-SO-RQU"/>
+                            <constraint firstItem="14H-OV-Fku" firstAttribute="centerX" secondItem="isw-w3-aZy" secondAttribute="centerX" id="cBj-I4-KJI"/>
+                            <constraint firstItem="14H-OV-Fku" firstAttribute="top" secondItem="7Xh-Fp-RkT" secondAttribute="top" constant="20" id="cNi-TG-xYh"/>
+                            <constraint firstItem="Fpj-RF-S1j" firstAttribute="top" secondItem="14H-OV-Fku" secondAttribute="bottom" constant="20" id="dpm-EZ-HhH"/>
+                            <constraint firstItem="7Xh-Fp-RkT" firstAttribute="bottom" secondItem="iSF-SA-5sB" secondAttribute="bottom" constant="20" id="ljh-Qt-ULG"/>
+                            <constraint firstItem="xmP-l4-GBh" firstAttribute="width" secondItem="isw-w3-aZy" secondAttribute="width" multiplier="1/4" id="shh-U3-uAI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Xh-Fp-RkT"/>
+                    </view>
+                    <connections>
+                        <outlet property="contactImageView" destination="yDx-Ao-F1X" id="acQ-CB-sAC"/>
+                        <outlet property="containerStackView" destination="14H-OV-Fku" id="aRT-Qc-rgi"/>
+                        <outlet property="descriptionLabel" destination="BFb-Wj-sD6" id="YFC-hs-uTw"/>
+                        <outlet property="facebookImageView" destination="FO3-Ce-B8d" id="JFw-v9-ssC"/>
+                        <outlet property="gmailImageView" destination="SJK-9C-5JP" id="4vH-2k-UK1"/>
+                        <outlet property="nextButton" destination="iSF-SA-5sB" id="VGq-bx-y0z"/>
+                        <outlet property="outlookImageView" destination="gCf-po-R4g" id="0W5-er-dmy"/>
+                        <outlet property="titleLabel" destination="vlR-d3-Ekl" id="SIK-oO-LK7"/>
+                        <outlet property="yahooImageView" destination="7wL-UV-Wlz" id="0e7-B4-zND"/>
+                        <outletCollection property="containerViews" destination="t3c-Bw-K43" collectionClass="NSMutableArray" id="6wp-ej-oyU"/>
+                        <outletCollection property="containerViews" destination="xmP-l4-GBh" collectionClass="NSMutableArray" id="LD7-pd-Br1"/>
+                        <outletCollection property="containerViews" destination="YqD-jy-jqP" collectionClass="NSMutableArray" id="IWs-d2-gj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTx-2x-Zwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Facebook" width="50" height="96"/>
+        <image name="Gmail" width="106" height="80"/>
+        <image name="Menu_Linked_Yahoo" width="39" height="39"/>
+        <image name="Outlook" width="96" height="96"/>
+        <namedColor name="appBlue">
+            <color red="0.24705882352941178" green="0.32941176470588235" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appDarkRed">
+            <color red="0.94901960784313721" green="0.31372549019607843" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGrayChateau">
+            <color red="0.63529411764705879" green="0.63137254901960782" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appOutlookBlue">
+            <color red="0.17647058823529413" green="0.44313725490196076" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

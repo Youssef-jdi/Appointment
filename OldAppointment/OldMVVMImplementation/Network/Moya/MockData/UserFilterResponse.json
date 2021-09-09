@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "id": 14,
+            "givenName": "Jan",
+            "familyName": "van Galenstraat",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-LHASKDNALKDMASDA42423423",
+            "emailAddress": "van@gmail.com",
+            "isBanned": false,
+            "credits": 200
+        },
+        {
+            "id": 27,
+            "givenName": "Jan",
+            "familyName": "Willems",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-ASDSADASDSADSADSAD",
+            "emailAddress": "willems@gmail.com",
+            "isBanned": false,
+            "credits": 100
+        },
+        {
+            "id": 2,
+            "givenName": "Jan",
+            "familyName": "Smit",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-LHASKDNALKDMAADSADSAD42423423",
+            "emailAddress": "smit@outlook.com",
+            "isBanned": false,
+            "credits": 150
+        },
+        {
+            "id": 50,
+            "givenName": "Janet",
+            "familyName": "Arnold",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-FGAFDGFDGFDGFDGFDAGFDA",
+            "emailAddress": "janet.arnold@hotmail.com",
+            "isBanned": false,
+            "credits": 200
+        },
+        {
+            "id": 105,
+            "givenName": "Janner",
+            "familyName": "Maan",
+            "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+            "firebaseId": "-WERWRAWR453sfsdfds4534dfs",
+            "emailAddress": "jaanneer.v@aol.com",
+            "isBanned": false,
+            "credits": 50
+        }
+    ],
+    "pagination": {
+        "_links": {
+            "self": "https://appointment.dev2.d-tt.nl/api/v1/users/filter?query=Jan&offset=5&limit=5",
+            "next": "https://appointment.dev2.d-tt.nl/api/v1/users/filter?query=Jan&offset=10&limit=5"
+        }
+    }
+}

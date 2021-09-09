@@ -1,0 +1,184 @@
+{
+    "title": "Meeting with client",
+    "description": "Meeting to discuss onboarding process and starting roadmap planning.",
+    "type": "business",
+    "createdBy": {
+        "id": 27,
+        "givenName": "Jan",
+        "familyName": "Willems",
+        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+        "firebaseId": "-ASDSADASDSADSADSAD",
+        "emailAddress": "willems@gmail.com",
+        "isBanned": false,
+        "credits": 100
+    },
+    "location": {
+        "country": "Netherlands",
+        "region": "Centrum",
+        "locality": "Amsterdam",
+        "thoroughfare": "Kinkerstraat 200 1V",
+        "postalCode": "2204 AV",
+        "latitude": 52.379189,
+        "longitude": 4.899431
+    },
+    "isNew": true,
+    "status": true,
+    "endDate": 1553080785,
+    "startDate": 1552990785,
+    "allowDateProposals": true,
+    "allowAvailability": true,
+    "isIncoming": true,
+    "lastActivityAt": 1552990785,
+    "createdAt": 1552990785,
+    "plannedDate": 1552990785,
+    "confirmedDateId": 7,
+    "proposedDates": [
+        {
+            "id": 3,
+            "timestamp": 1552990785,
+            "attendance": {
+                "confirmed": [
+                    {
+                        "id": 3,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    },
+                    {
+                        "id": 2,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    },
+                    {
+                        "id": 1,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    }
+                ],
+                "unsure": [
+                    {
+                        "id": 33,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    },
+                    {
+                        "id": 34,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    },
+                    {
+                        "id": 35,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    }
+                ],
+                "cancelled": [
+                    {
+                        "id": 10,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    },
+                    {
+                        "id": 12,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    },
+                    {
+                        "id": 13,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    }
+                ],
+                "notResponded": [
+                    {
+                        "id": 11,
+                        "givenName": "Jan",
+                        "familyName": "Willems",
+                        "profileImageURL": "https://absoluteurl.com/coolimage.jpeg",
+                        "firebaseId": "-ASDSADASDSADSADSAD",
+                        "emailAddress": "willems@gmail.com"
+                    }
+                ]
+            }
+        }
+    ],
+    "attachments": [
+        "https://pathtoattachment.nl/attachment.pdf"
+    ],
+    "toDoList": [
+        {
+            "id": 2,
+            "title": "Prepare food",
+            "isCompleted": false
+        },
+        {
+            "id": 3,
+            "title": "Drink",
+            "isCompleted": true
+        },
+        {
+            "id": 7,
+            "title": "Eat food",
+            "isCompleted": false
+        }
+    ],
+    "conversations": [
+        {
+            "id": 123,
+            "name": "groupChat",
+            "countParticipants": 21,
+            "chatType": 1
+        },
+        {
+            "id": 123,
+            "name": "privateChat",
+            "countParticipants": 2,
+            "chatType": 0
+        },
+        {
+            "id": 413,
+            "name": "Cadeau Joost",
+            "countParticipants": 3,
+            "chatType": 1
+        },
+        
+    ],
+    "participantUserIds": [
+        1,
+        2,
+        3,
+        33,
+        34,
+        35,
+        10,
+        12,
+        13,
+        11
+    ]
+}

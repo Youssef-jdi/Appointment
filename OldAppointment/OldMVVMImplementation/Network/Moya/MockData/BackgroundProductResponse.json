@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Whatsapp Background",
+            "owned": true,
+            "price": {
+                "amount": 1,
+                "localizedPrice": "€ 1"
+            },
+            "type": {
+                "background": {
+                    "imageURL": "https://i.pinimg.com/236x/8f/ba/cb/8fbacbd464e996966eb9d4a6b7a9c21e--sultan.jpg"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": "Image 2",
+            "owned": true,
+            "price": {
+                "amount": 30,
+                "localizedPrice": "€ 30"
+            },
+            "type": {
+                "background": {
+                    "imageURL": "https://i.pinimg.com/474x/e9/08/a5/e908a5bd5add462362faedb5e0502354--walls.jpg"
+                }
+            }
+        }
+    ]
+}

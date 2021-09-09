@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickedDateView" customModule="appointment" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="zqD-0Y-hVG"/>
+                <outlet property="descriptionLabel" destination="a0c-cj-a9A" id="kpF-uB-viT"/>
+                <outlet property="imageView" destination="4JS-Nz-OvZ" id="1R0-aY-aXp"/>
+                <outlet property="leftButton" destination="k82-o9-qBI" id="0Tl-BK-JuQ"/>
+                <outlet property="rightButton" destination="gSp-eh-aMM" id="sFZ-8W-Wtm"/>
+                <outlet property="subDescriptionLabel" destination="HwI-4y-EbW" id="DFZ-Wj-qF9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fds-qc-5T4">
+                    <rect key="frame" x="0.0" y="54" width="414" height="246"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7Jy-SA-CVv">
+                            <rect key="frame" x="20.5" y="0.0" width="373" height="166"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popUp_dateConfirmation" translatesAutoresizingMaskIntoConstraints="NO" id="4JS-Nz-OvZ">
+                                    <rect key="frame" x="136.5" y="0.0" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="2Gx-LG-PiH"/>
+                                        <constraint firstAttribute="height" constant="100" id="rwp-o0-eQz"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0c-cj-a9A">
+                                    <rect key="frame" x="168" y="116" width="37" height="17.5"/>
+                                    <color key="tintColor" name="appGray"/>
+                                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwI-4y-EbW">
+                                    <rect key="frame" x="169.5" y="149.5" width="34.5" height="16.5"/>
+                                    <color key="tintColor" name="appGray"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-Sm-dnm">
+                            <rect key="frame" x="0.0" y="186" width="414" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k82-o9-qBI">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="4Jx-gg-3RX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                    <color key="tintColor" name="appGray"/>
+                                    <connections>
+                                        <action selector="tappedLeftButton:" destination="-1" eventType="touchUpInside" id="f5i-Ej-V3p"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSp-eh-aMM">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="60"/>
+                                    <color key="backgroundColor" name="appBlue"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="tappedRightButton:" destination="-1" eventType="touchUpInside" id="0K6-Lh-6tO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="gSp-eh-aMM" firstAttribute="height" secondItem="k82-o9-qBI" secondAttribute="height" id="sDo-KL-oPl"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7Jy-SA-CVv" firstAttribute="width" secondItem="Fds-qc-5T4" secondAttribute="width" multiplier="0.9" id="LgG-ya-z5A"/>
+                        <constraint firstItem="eEc-Sm-dnm" firstAttribute="width" secondItem="Fds-qc-5T4" secondAttribute="width" id="hdh-GE-NIq"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fds-qc-5T4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2Du-tW-bzW"/>
+                <constraint firstItem="Fds-qc-5T4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="vd6-5s-OPh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fds-qc-5T4" secondAttribute="trailing" id="yD0-13-4xB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popUp_dateConfirmation" width="178" height="200"/>
+        <namedColor name="appBlue">
+            <color red="0.24705882352941178" green="0.32941176470588235" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGray">
+            <color red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

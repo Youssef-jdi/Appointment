@@ -1,0 +1,22 @@
+sources:
+  include:
+    - ./appointment
+    - ./appointmentTests
+templates:
+  - ./Pods/SwiftyMocky/Sources/Templates
+output:
+  ./appointmentTests/Mocks
+args:
+  testable:
+    - appointment
+  import:
+  # Any framework that is used by the objects you wish to mock.
+    - Moya
+    - p2_OAuth2
+    - Result
+    - RxSwift
+  excludedSwiftLintRules:
+    - force_cast
+    - function_body_length
+    - line_length
+    - vertical_whitespace

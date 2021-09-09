@@ -1,0 +1,48 @@
+{
+    "data": {
+        "appointments" : [
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "timestamp": 1552867200.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 1,
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "timestamp": 1552867200.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 1,
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "timestamp": 1552867200.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 1,
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "timestamp": 1552953600.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 1,
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "timestamp": 1552953600.0,
+                "durationTimeDescription": "19:03 - 20:25",
+                "totalCount": 1,
+            },
+            {
+                "type": 1,
+                "title": "Bussines Type Planning",
+                "durationTimeDescription": "19:03 - 20:25",
+                "timestamp": 1552953600.0,
+                "totalCount": 1,
+            }
+        ]
+    }
+}

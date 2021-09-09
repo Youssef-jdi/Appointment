@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Don't have an account yet"; ObjectID = "1ev-s1-1pl"; */
+"1ev-s1-1pl.normalTitle" = "Don't have an account yet";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "1kf-RX-KQI"; */
+"1kf-RX-KQI.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "5Mn-5f-xrQ"; */
+"5Mn-5f-xrQ.normalTitle" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "QV0-FK-ICZ"; */
+"QV0-FK-ICZ.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "WuM-WB-enr"; */
+"WuM-WB-enr.text" = "Login";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "bdM-Vr-B8Z"; */
+"bdM-Vr-B8Z.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Forget Password?"; ObjectID = "dbw-Bw-wRN"; */
+"dbw-Bw-wRN.normalTitle" = "Forget Password?";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "esP-N8-Hgl"; */
+"esP-N8-Hgl.placeholder" = "E-mail";
+
+/* Class = "UIButton"; normalTitle = "TUTORIAL"; ObjectID = "etR-Bl-nqH"; */
+"etR-Bl-nqH.normalTitle" = "TUTORIAL";
+
+/* Class = "UILabel"; text = "Error"; ObjectID = "kVt-PX-HaP"; */
+"kVt-PX-HaP.text" = "Error";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "v06-8t-5eo"; */
+"v06-8t-5eo.normalTitle" = "Login";

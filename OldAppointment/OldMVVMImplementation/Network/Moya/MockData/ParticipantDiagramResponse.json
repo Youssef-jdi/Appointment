@@ -1,0 +1,60 @@
+{
+    "data": [
+    {
+        "id": 12312,
+        "isOwner": true,
+        "attendanceId": 1,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Timothy"
+    },
+    {
+        "id": 12312,
+        "isOwner": false,
+        "attendanceId": 0,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Mark"
+    },
+    {
+        "id": 12312,
+        "isOwner": false,
+        "attendanceId": 2,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Juliet"
+    },
+    {
+        "id": 12312,
+        "isOwner": false,
+        "attendanceId": 3,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Romeo"
+    },
+    {
+        "id": 12312,
+        "isOwner": false,
+        "attendanceId": 2,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Andres"
+    },
+    {
+        "id": 12312,
+        "attendanceId": 1,
+        "isOwner": false,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Antonio"
+    },
+    {
+        "id": 12312,
+        "isOwner": false,
+        "attendanceId": 0,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Onur"
+    },
+    {
+        "id": 12312,
+        "isOwner": false,
+        "attendanceId": 0,
+        "profileImageUrl": "asdkhasjkdhawksd",
+        "fullname": "Apo"
+    }
+    ]
+}

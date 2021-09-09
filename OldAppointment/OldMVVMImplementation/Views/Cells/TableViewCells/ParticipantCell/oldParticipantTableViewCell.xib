@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParticipantTableViewCell" rowHeight="109" id="KGk-i7-Jjw">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mgl-bK-jX6">
+                        <rect key="frame" x="15" y="24.5" width="421" height="60"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0th-gp-kKi">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0th-gp-kKi" secondAttribute="height" multiplier="1:1" id="iB6-bp-6Cq"/>
+                                </constraints>
+                                <state key="normal" image="Checkbox_Off"/>
+                                <connections>
+                                    <action selector="checkBoxButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zwM-Vp-V8R"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePicture_icon" translatesAutoresizingMaskIntoConstraints="NO" id="XgG-6C-Ube">
+                                <rect key="frame" x="76" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XgG-6C-Ube" secondAttribute="height" multiplier="1:1" id="c1R-F9-TLR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdP-VF-8it">
+                                <rect key="frame" x="152" y="0.0" width="211" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IA-4P-vN3">
+                                <rect key="frame" x="379" y="0.0" width="42" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRw-bo-UWF">
+                                <rect key="frame" x="421" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iRw-bo-UWF" secondAttribute="height" multiplier="1:1" id="kJL-Xa-eYo"/>
+                                </constraints>
+                                <state key="normal" image="Cross"/>
+                                <connections>
+                                    <action selector="crossButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4wS-cf-GJz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="iRw-bo-UWF" firstAttribute="width" secondItem="iRw-bo-UWF" secondAttribute="height" multiplier="1:1" id="oau-4a-Yhj"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jff-25-nIo">
+                        <rect key="frame" x="91" y="108" width="360" height="1"/>
+                        <color key="backgroundColor" name="appGrayMagnesium"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cye-se-Ycb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jff-25-nIo" firstAttribute="leading" secondItem="XgG-6C-Ube" secondAttribute="leading" priority="750" id="6yP-mq-iiX"/>
+                    <constraint firstAttribute="trailing" secondItem="Jff-25-nIo" secondAttribute="trailing" id="G4q-7o-0iF"/>
+                    <constraint firstItem="Mgl-bK-jX6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HBh-fc-4rH"/>
+                    <constraint firstItem="Jff-25-nIo" firstAttribute="leading" secondItem="ZdP-VF-8it" secondAttribute="leading" priority="250" id="Jqd-zq-1eM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Mgl-bK-jX6" secondAttribute="trailing" id="Jz1-GS-w8m"/>
+                    <constraint firstAttribute="bottom" secondItem="Jff-25-nIo" secondAttribute="bottom" id="PHc-Ft-wDH"/>
+                    <constraint firstItem="Mgl-bK-jX6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ggv-De-9u7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="XgG-6C-Ube" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.55" id="ZQ0-xb-sS4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="0th-gp-kKi" id="mrS-Yc-RzU"/>
+                <outlet property="crossButton" destination="iRw-bo-UWF" id="ywf-bS-Mzb"/>
+                <outlet property="nameLabel" destination="ZdP-VF-8it" id="qwi-tr-Aag"/>
+                <outlet property="platformLabel" destination="3IA-4P-vN3" id="zz2-ge-Eej"/>
+                <outlet property="profileImageView" destination="XgG-6C-Ube" id="UY6-p5-cjO"/>
+                <outlet property="seperatorLeadingToNameLabelConstraint" destination="Jqd-zq-1eM" id="qsF-kx-ZGE"/>
+                <outlet property="seperatorLeadingToProfileImageViewConstraint" destination="6yP-mq-iiX" id="OSA-cX-k1z"/>
+            </connections>
+            <point key="canvasLocation" x="242.40000000000001" y="152.47376311844079"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Checkbox_Off" width="24" height="24"/>
+        <image name="Cross" width="26" height="26"/>
+        <image name="ProfilePicture_icon" width="56" height="56"/>
+        <namedColor name="appGrayMagnesium">
+            <color red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

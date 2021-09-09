@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 32,
+            "invitationId": 213,
+            "proposedDateId": 123,
+            "response": {
+                "status": "CANCELLED",
+                "alternativeDate": 243239423234,
+                "comment": "This isn't good for me."
+            }
+        },
+        {
+            "id": 33,
+            "invitationId": 1223,
+            "proposedDateId": 221,
+            "response": {
+                "status": "AVAILABLE",
+                "alternativeDate": null,
+                "comment": null
+            }
+        }
+    ]
+}
